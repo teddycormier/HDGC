@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 100%;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+main p {
+    width: 52%;
+    float: right;
+    font-size: 115%;
+    padding-right: 130px;
+    padding-top: 40px;
+    padding-bottom: 500px;
+}
+
+main h2 {
+    width: 52%;
+    float: right;
+    font-size: 115%;
+    padding-right: 130px;
+    padding-bottom: 10px;
+}
+
+main ul li {
+    width: 52%;
+    float: right;
+    font-size: 115%;
+    padding-right: 130px;
+    padding-bottom: 10px;
+}
+
+main ul {
+    padding-left: 120px;
+}
+
+
+
+/* header style */
+header {
+    background-image: url("../images/hillsideimage.jpeg");
+    background-repeat: no-repeat;
+    background-size: 1440px 600px;
+    color: white;
+    font-variant: sans-serif;
+    padding-bottom: 400px;
+}
+
+header img {
+    align-content: left;
+    width: 4.25em;
+    height: 4.25em;
+    padding-left: 0px;
+    padding-bottom: 240px;
+    padding-top: 0px;
+}
+
+header h1 {
+    text-align: left;
+}
+
+/* header style end */
+
+footer {
+    clear: both;
+    height: 250px;
+    font-size: 80%;
+    color: white;
+    text-align: center;
+    background-color:#333;
+}
+
+footer p {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 80%;
+    font-variant: small-caps;
+    padding-bottom: 50px;
+}
+
+footer img {
+    padding-top: 40px;
+    width: 235px;
+    height: 132px;
+}
+
+
+/* nav menu */
+#nav_menu {
+    position: relative;
+    background-color: #333;
+}
+
+#nav_menu ::after pseudo-element {
+	clear: both;
+	display: block;
+}
+
+#nav_menu ul {
+	list-style: none;
+	margin: 0px;
+    padding: 0px;
+}
+
+#nav_menu ul li {
+    float: left;
+}
+
+#nav_menu ul li a {
+    display: block;
+    width: 170px;
+	text-align: center;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	text-decoration: none;
+	color: white;
+    border: 2px solid white;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    box-sizing: border-box;
+    padding-right: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#nav_menu .current {
+    color: white;
+    background-color: #333;
+    width: 220px;
+}
+
+#nav_menu ul li a:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+#nav_menu .dropdown .droptn {
+    background-color: lightgray;
+    color: black;
+}
+
+
+/* end of nav menu */
+
+
+/* sub menu */
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropbtn a:hover {
+	background-color: lightgray;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	padding-top: 7px;
+}
+
+.dropdown-content a:hover {
+    background-color: lightgrey;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    position: absolute;
+    padding-left: 0px;
+    width: 170px;
+    padding-top: 25px;
+    color: black;
+}
+
+.dropdown {
+    display: block;
+	width: 170px;
+	text-align: center;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	text-decoration: none;
+	color: white;
+    float: left;
+    border: 2px solid white;
+    box-sizing: border-box;
+    border-right: none;
+    border-top: none;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dropdown .dropdown-content a:hover {
+    font-style: italic;
+    color: black;
+}
+
+/* search bar */
+
+#nav_menu .search-container {
+    float: right;
+    box-sizing: border-box;
+    background-color: #333;
+  }
+
+#nav_menu input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+
+#nav_menu .search-container button {
+    float: right;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    width: 50px;
+  }
+
+  #nav_menu .search-container button:hover {
+    background: #ccc;
+  }
+  
+  @media screen and (max-width: 600px) {
+    #nav_menu .search-container {
+      float: none;
+    }
+    #nav_menu a, #nav_menuinput[type=text], #nav_menu .search-container button {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    #nav_menu input[type=text] {
+      border: 1px solid #ccc;  
+    }
+  }
+  
