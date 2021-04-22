@@ -3,6 +3,12 @@
     padding: 0;
 }
 
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(218, 223, 225, 1), rgba(0, 0, 0, 0));
+}
+
 body {
     font-family: sans-serif;
     font-size: 100%;
@@ -10,37 +16,94 @@ body {
     width: 100%;
     margin: 0 auto;
     background-color: white;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.homesection {
+  float: right;
+  width: 62%;
+}
+
+.mainwidth h1 {
+    padding-top: 20px;
+    font-family: sans-serif;
+    padding-bottom: 15px;
+    font-size: 150%;
+}
+
+.sidebar h3 {
+    padding-top: 20px;
+    font-family: sans-serif;
+    font-size: 150%;
+    color: #D5AD6D;
+}
+
+.sidebar p {
+  font-size: 80%;
+}
+
+.mainwidth h2 {
+    font-size: 110%;
+}
+
+.mainlist {
+  float: right;
+  padding-right: 360px;
+  font-size: 110%;
+}
+
+.courselist {
+  float: right;
+  padding-right: 180px;
+  padding-left: 75px;
+  font-size: 110%;
+  padding-bottom: 25px;
+}
+
+li {
+  padding-bottom: 8px;
 }
 
 main p {
-    width: 52%;
+    width: 100%;
     float: right;
     font-size: 115%;
-    padding-right: 130px;
     padding-top: 40px;
-    padding-bottom: 500px;
+}
+
+main h1 {
+    font-size: 160%;
+    color: #B8B8B8;
+    padding-right: none;
 }
 
 main h2 {
-    width: 52%;
+    width: 100%;
     float: right;
     font-size: 115%;
-    padding-right: 130px;
     padding-bottom: 10px;
+    padding-top: 20px;
 }
 
-main ul li {
-    width: 52%;
-    float: right;
-    font-size: 115%;
-    padding-right: 130px;
-    padding-bottom: 10px;
+.text1 {
+  float: right;
+  padding-right: 150px;
 }
 
-main ul {
-    padding-left: 120px;
+.text2 {
+  float: right;
+  padding-right: 150px;
+  padding-bottom: 50px;
 }
 
+.sidebar {
+  width: 25%;
+  margin-left: 100px;
+}
+
+.sidebar p {
+  padding-bottom: 80px;
+}
 
 
 /* header style */
@@ -50,21 +113,28 @@ header {
     background-size: 1440px 600px;
     color: white;
     font-variant: sans-serif;
-    padding-bottom: 400px;
 }
 
-header img {
+.bordertop {
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 200px;
+    width: 100%;
+    position: relative;
+}
+
+header img{
     align-content: left;
     width: 4.25em;
     height: 4.25em;
     padding-left: 0px;
-    padding-bottom: 240px;
+    padding-bottom: 305px;
     padding-top: 0px;
 }
 
 header h1 {
     text-align: left;
 }
+
 
 /* header style end */
 
@@ -88,14 +158,67 @@ footer p {
 footer img {
     padding-top: 40px;
     width: 235px;
-    height: 132px;
+    height: 160px;
 }
 
+/* new menu */
+.topnav {
+	overflow: hidden;
+	background-color: #202020;
+    position: relative;
+    border: 2px solid black;
+  }
+
+  .topnav .events {
+    background-color: #282828;
+  }
+
+  .topnav .faqs {
+    background-color: #303030;
+  }
+
+  .topnav .thecourse {
+    background-color: #383838;
+  }
+
+  .topnav .dropdown {
+    background-color: #404040;
+  }
+  
+  .topnav #myLinks {
+	display: none;
+  }
+  
+  .topnav a {
+	color: white;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	display: block;
+  }
+  
+  .topnav a.icon {
+	background: black;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+  }
+  
+  .topnav a:hover {
+	background-color: lightgrey;
+	opacity: 75%;
+	color: black;
+	font-weight: bold;
+  }
+  
+  .active {
+	color: white;
+  }
 
 /* nav menu */
 #nav_menu {
-    position: relative;
-    background-color: #333;
+	position: relative;
 }
 
 #nav_menu ::after pseudo-element {
@@ -106,46 +229,24 @@ footer img {
 #nav_menu ul {
 	list-style: none;
 	margin: 0px;
-    padding: 0px;
+	padding: 0px;
 }
 
 #nav_menu ul li {
-    float: left;
+	float: left;
 }
 
 #nav_menu ul li a {
-    display: block;
-    width: 170px;
+	display: block;
+	width: 165.02px;
 	text-align: center;
-	padding-top: 1.5em;
-	padding-bottom: 1.5em;
+	padding-top: 1em;
+	padding-bottom: 1em;
 	text-decoration: none;
+	background-color: #333;
 	color: white;
-    border: 2px solid white;
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    box-sizing: border-box;
-    padding-right: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
 }
-
-#nav_menu .current {
-    color: white;
-    background-color: #333;
-    width: 220px;
-}
-
-#nav_menu ul li a:hover {
-    background-color: lightgray;
-    color: black;
-}
-
-#nav_menu .dropdown .droptn {
-    background-color: lightgray;
-    color: black;
-}
-
 
 /* end of nav menu */
 
@@ -157,79 +258,39 @@ footer img {
 }
 
 .dropbtn a:hover {
-	background-color: lightgray;
+	color: white;
 }
 
 .dropdown-content {
 	display: none;
 	position: absolute;
-	padding-top: 7px;
+	padding-top: 10px;
 }
 
 .dropdown-content a:hover {
-    background-color: lightgrey;
+	background-color: #ddd;
+	font-style: italic;
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
-    position: absolute;
-    padding-left: 0px;
-    width: 170px;
-    padding-top: 25px;
-    color: black;
+	display: block;
 }
 
 .dropdown {
-    display: block;
-	width: 170px;
-	text-align: center;
-	padding-top: 1.5em;
-	padding-bottom: 1.5em;
+	display: block;
+	padding-bottom: 3px;
 	text-decoration: none;
+	background-color: #333;
 	color: white;
-    float: left;
-    border: 2px solid white;
-    box-sizing: border-box;
-    border-right: none;
-    border-top: none;
-    background-color: #333;
-    font-family: Arial, Helvetica, sans-serif;
+	float: left;
+	width: 100%;
 }
 
-.dropdown .dropdown-content a:hover {
-    font-style: italic;
-    color: black;
+#mobile_menu { 
+	display: none; 
+	background-color: #333;
 }
 
-/* search bar */
-
-#nav_menu .search-container {
-    float: right;
-    box-sizing: border-box;
-    background-color: #333;
-  }
-
-#nav_menu input[type=text] {
-    padding: 6px;
-    margin-top: 8px;
-    font-size: 17px;
-    border: none;
-}
-
-#nav_menu .search-container button {
-    float: right;
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
-    background: #ddd;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-    width: 50px;
-  }
-
-  #nav_menu .search-container button:hover {
-    background: #ccc;
-  }
   
   @media screen and (max-width: 600px) {
     #nav_menu .search-container {
