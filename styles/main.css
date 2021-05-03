@@ -93,7 +93,7 @@ main h2 {
 .text2 {
   float: right;
   padding-right: 150px;
-  padding-bottom: 50px;
+  padding-bottom: 70px;
 }
 
 .sidebar {
@@ -140,7 +140,7 @@ header h1 {
 
 footer {
     clear: both;
-    height: 250px;
+    height: 300px;
     font-size: 80%;
     color: white;
     text-align: center;
@@ -291,6 +291,49 @@ footer img {
 	background-color: #333;
 }
 
+@media only screen and (max-width: 1215px) {
+	
+  .mainlist {
+    padding-right: 220px;
+  }
+}
+
+@media only screen and (max-width: 955px) {
+	
+  .mainlist {
+    padding-right: 60px;
+  }
+}
+
+@media only screen and (max-width: 870px) {
+	
+  .homesection {
+    width: 100%;
+  }
+
+  .mainwidth {
+    width: 100%;
+  }
+
+  .mainlist {
+    float: none;
+    padding-left: 60px;
+  }
+
+  .sidebar {
+		padding-left: 150px;
+		width: 60%;
+		text-align: center;
+      }
+
+  .text1 {
+    float: none;
+  }
+
+  .homesection {
+    padding-left: 35px;
+  }
+}
   
   @media screen and (max-width: 600px) {
     #nav_menu .search-container {
@@ -307,5 +350,38 @@ footer img {
     #nav_menu input[type=text] {
       border: 1px solid #ccc;  
     }
+
+    .homesection {
+      width: 100%;
+    }
+
+    .mainwidth {
+      width: 100%;
+    }
+
+    .mainlist {
+      float: none;
+      padding: none;
+      width: 80%;
+    }
+
+    .text1 {
+      float: none;
+    }
+
+    .sidebar {
+      padding-left: 1px;
+      padding-right: 45px;
+      width: 70%;
+      text-align: center;
+    }
+
+    header img {
+      float: none;
+      display: block;
+          margin: 0 auto;
+          max-width: 100%;
+          max-height: 330px;
+      }
   }
   
