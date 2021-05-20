@@ -23,12 +23,13 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	
 
-    <title>HDGC</title>
+	<title>HEROES DISC GOLF</title>
     <meta property="og:site_name" content="HEROES DISC GOLF">
     <meta property="og:title" content="HEROES DISC GOLF">
     <link rel="icon" href="images/logo_nolocation.jpeg" type="image/gif" sizes="32x32">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="styles/slicknav.css">
+	<link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js">
 	</script> <script src="js/jquery.slicknav.min.js"></script>
 	<script type="text/javascript">
@@ -59,9 +60,16 @@ background-color: white;
 font-family: 'Trebuchet MS', sans-serif;
 }
 
+.sidebar {
+  width: 20%;
+  margin-left: 2.5em;
+  float: left;
+}
+
 .homesection {
-float: right;
-width: 62%;
+  float: right;
+  width: 70%;
+  margin-left: 2em;
 }
 
 .mainwidth h1 {
@@ -72,10 +80,18 @@ font-size: 150%;
 }
 
 .sidebar h3 {
-padding-top: 20px;
-font-family: sans-serif;
-font-size: 150%;
-color: #D5AD6D;
+    padding-top: 1.25em;
+    font-family: sans-serif;
+    font-size: 150%;
+}
+
+.gradient-text {
+  background: rgb(39,39,39);
+  /* Create the gradient. */
+
+  background: linear-gradient(to right, red, blue, red, blue);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 .sidebar p {
@@ -88,14 +104,13 @@ font-size: 110%;
 
 .memberslist {
 float: right;
-padding-right: 370px;
+padding-right: 27em;
 font-size: 110%;
 }
 
 .rememberlist {
 float: right;
-padding-right: 190px;
-padding-left: 75px;
+padding-right: 15em;
 font-size: 110%;
 padding-bottom: 25px;
 }
@@ -137,15 +152,13 @@ padding-top: 60px;
 padding-bottom: 70px;
 }
 
-.sidebar {
-width: 25%;
-margin-left: 100px;
-}
-
 .sidebar p {
 padding-bottom: 80px;
 }
 
+.sidebar a:hover {
+  font-weight: bold;
+}
 
 /* header style */
 header {
@@ -162,10 +175,9 @@ position: relative;
 }
 
 header img{
-	height: 38em;
-    width: 80em;
-    margin-left: 5.25%;
-}
+    height: 38em;
+    width: 100%;
+  }
 
 header h1 {
 text-align: left;
@@ -197,29 +209,35 @@ width: 235px;
 height: 160px;
 }
 
+footer .edge {
+  padding-top: 40px;
+  width: 160px;
+  height: 160px;
+}
+
 /* new menu */
 .topnav {
-overflow: hidden;
-background-color: #202020;
-position: relative;
-border: 2px solid black;
-}
+	overflow: hidden;
+	background: linear-gradient(to right, red, white,blue);
+    position: relative;
+    border: 2px solid black;
+  }
 
-.topnav .events {
-background-color: #282828;
-}
+  .topnav .events {
+    background-color: #282828;
+  }
 
-.topnav .faqs {
-background-color: #303030;
-}
+  .topnav .teetimes {
+    background-color: #303030;
+  }
 
-.topnav .thecourse {
-background-color: #383838;
-}
+  .topnav .faqs {
+    background-color: #383838;
+  }
 
-.topnav .dropdown {
-background-color: #404040;
-}
+  .topnav .dropdown {
+    background-color: #404040;
+  }
 
 .topnav #myLinks {
 display: none;
@@ -352,20 +370,19 @@ background-color: #333;
   @media only screen and (max-width: 955px) {
 
     .rememberlist {
-        padding-right: 150px;
+    width: 95%;
+    margin: auto;
     }
 
     .memberslist {
-		padding-right: 150px;
-		width: 100%;
+		width: 95%;
+    margin: auto;
     }
 
     header img {
-		float: none;
-		display: block;
-        margin: 0 auto;
-        max-width: 100%;
-        max-height: 475px;
+		width: 95%;
+		height: 65%;
+    margin: auto;
     }
   }
   
@@ -380,23 +397,24 @@ background-color: #333;
     }
 
     .rememberlist {
-        float: none;
-        padding-left: 60px;
+        width: 95%;
+    margin: auto;
     }
 
     .memberslist {
-        float: none;
-        padding-left: 60px;
+		width: 95%;
+    margin: auto;
     }
   
 	.sidebar {
-		padding-left: 150px;
-		width: 60%;
+		width: 95%;
+    margin: auto;
 		text-align: center;
       }
   
     .text1 {
-      float: none;
+		width: 95%;
+    margin: auto;
     }
   
     .homesection {
@@ -404,30 +422,14 @@ background-color: #333;
     }
 
     header img {
-		float: none;
-		display: block;
-        margin: 0 auto;
-        max-width: 100%;
-        max-height: 430px;
+		width: 95%;
+		height: 65%;
+    margin: auto;
     }
 
   }
     
     @media screen and (max-width: 600px) {
-      #nav_menu .search-container {
-        float: none;
-      }
-      #nav_menu a, #nav_menuinput[type=text], #nav_menu .search-container button {
-        float: none;
-        display: block;
-        text-align: left;
-        width: 100%;
-        margin: 0;
-        padding: 14px;
-      }
-      #nav_menu input[type=text] {
-        border: 1px solid #ccc;  
-      }
   
       .homesection {
         width: 100%;
@@ -438,34 +440,30 @@ background-color: #333;
       }
 
       .rememberlist {
-        float: none;
-        padding: none;
-        width: 100%;
+		width: 100%;
+    margin: auto;
       }
 
       .memberslist {
-        float: none;
-        padding: none;
-        width: 100%;
+        width: 95%;
+    margin: auto;
       }
   
       .text1 {
-        float: none;
+        width: 95%;
+    margin: auto;
       }
   
       .sidebar {
-		padding-left: 1px;
-		padding-right: 45px;
-		width: 70%;
+		width: 95%;
+    margin: auto;
 		text-align: center;
       }
 
       header img {
-		float: none;
-		display: block;
-        margin: 0 auto;
-        max-width: 100%;
-        max-height: 300px;
+		width: 95%;
+		height: 65%;
+    margin: auto;
     }
 }
 </style>
@@ -519,7 +517,7 @@ background-color: #333;
 			}
 		</script>
 
-	<img src="images/IMG_2875.jpeg">
+	<img src="images/pond.jpeg">
 
 	</header>
 
@@ -554,42 +552,49 @@ background-color: #333;
 			</ul>
 		
 		</div>
-			<p class="text2">Please contact us or visit our FAQs page for further inforation on Tee Times.</p>
+			<p class="text2">Please contact us or visit our FAQs page for further information on Tee Times.</p>
 		</div>
 	</div>
 
-		<aside class="sidebar">
-				<div>
-					<h3>COST</h3>
-					<p>The course is currently private but free to play with permisson.</p>
-				</div>
-				<div>
-					<hr>
-					<h3>SHOP</h3>
-					<p>Apparel is limited to members only. Stay tuned for more news!</p>
-				</div>
-				<div>
-					<hr>
-					<h3>COURSES</h3>
-					<p>Three current configurations of varying difficulty. From the Reds, designed to create fun for beginners and families, to the Blue, which challenges high caliber players.</p>
-				</div>
-				<hr>
-				<div>
-					<h3>MEMBERSHIP</h3>
-					<p>Please contact us at 860-372-8903 for further information in regards to a membership at HDGC.</p>
-					<hr>
-				</div>
-		</aside>
+	<aside class="sidebar">
+		<div>
+			<h3 class="gradient-text"><a href="cost.html">COST</a></h3>
+			<p>The course is currently private but free to play with permisson.</p>
+		</div>
+		<div>
+			<hr>
+			<h3 class="gradient-text"><a href="shop.html">SHOP</a></h3>
+			<p>Apparel is limited to members only. Stay tuned for more news!</p>
+		</div>
+		<div>
+			<hr>
+			<h3 class="gradient-text"><a href="courses.html">COURSES</a></h3>
+			<p>Three current configurations of varying difficulty. From the Reds, designed to create fun for beginners and families, to the Blue, which challenges high caliber players.</p>
+		</div>
+		<hr>
+		<div>
+			<h3 class="gradient-text"><a href="membership.html">MEMBERSHIP</a></h3>
+			<p>Please contact us at 860-372-8903 for further information in regard to a membership at HDGC.</p>
+			<hr>
+		</div>
+</aside>
     </main>
 
 
     <footer>
 
-		<img src="images/respecthergame.jpeg">
-        <p>Heroes Disc Golf. 12 Silkey Rd. Granby, CT 06090
-			<br>
-			<br>
-			&copy;Teddy Cormier Productions 2021
+		<p>
+			<a href="https://respecthergame.org/">
+				<img src="images/respecthergame.jpeg">
+			</a>
+			<a href="https://edgediscgolf.org/">
+			  <img class="edge" src="images/edge.png">
+			</a>
+			  <br>
+			  <br>
+			  <br>
+			  <br>
+			&copy;TCormier Productions 2021
 		</p>
 
 

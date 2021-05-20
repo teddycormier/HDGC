@@ -23,7 +23,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	
 
-    <title>HDGC</title>
+  <title>HEROES DISC GOLF</title>
     <meta property="og:site_name" content="HEROES DISC GOLF">
     <meta property="og:title" content="HEROES DISC GOLF">
     <link rel="icon" href="images/logo_nolocation.jpeg" type="image/gif" sizes="32x32">
@@ -185,7 +185,7 @@ text-align: left;
 
 footer {
 clear: both;
-height: 300px;
+height: 24em;
 font-size: 80%;
 color: white;
 text-align: center;
@@ -206,29 +206,35 @@ width: 235px;
 height: 160px;
 }
 
+footer .edge {
+  padding-top: 40px;
+  width: 160px;
+  height: 160px;
+}
+
 /* new menu */
 .topnav {
-overflow: hidden;
-background-color: #202020;
-position: relative;
-border: 2px solid black;
-}
+	overflow: hidden;
+	background: linear-gradient(to right, red, white,blue);
+    position: relative;
+    border: 2px solid black;
+  }
 
-.topnav .events {
-background-color: #282828;
-}
+  .topnav .events {
+    background-color: #282828;
+  }
 
-.topnav .faqs {
-background-color: #303030;
-}
+  .topnav .teetimes {
+    background-color: #303030;
+  }
 
-.topnav .thecourse {
-background-color: #383838;
-}
+  .topnav .faqs {
+    background-color: #383838;
+  }
 
-.topnav .dropdown {
-background-color: #404040;
-}
+  .topnav .dropdown {
+    background-color: #404040;
+  }
 
 .topnav #myLinks {
 display: none;
@@ -507,12 +513,19 @@ background-color: #333;
 
     <footer>
 
-		<img src="images/respecthergame.jpeg">
-        <p>Heroes Disc Golf. 12 Silkey Rd. Granby, CT 06090
-			<br>
-			<br>
-			&copy;Teddy Cormier Productions 2021
-		</p>
+      <p>
+        <a href="https://respecthergame.org/">
+          <img src="images/respecthergame.jpeg">
+        </a>
+        <a href="https://edgediscgolf.org/">
+          <img class="edge" src="images/edge.png">
+        </a>
+          <br>
+          <br>
+          <br>
+          <br>
+        &copy;TCormier Productions 2021
+      </p>
 
 
     </footer>

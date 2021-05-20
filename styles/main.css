@@ -19,23 +19,42 @@ body {
     font-family: 'Trebuchet MS', sans-serif;
 }
 
+.sidebar {
+  width: 20%;
+  margin-left: 2.5em;
+  float: left;
+}
+
 .homesection {
   float: right;
-  width: 62%;
+  width: 70%;
+  margin-left: 2em;
 }
 
 .mainwidth h1 {
-    padding-top: 20px;
+    padding-top: 1.25em;
     font-family: sans-serif;
-    padding-bottom: 15px;
+    padding-bottom: .93em;
     font-size: 150%;
 }
 
 .sidebar h3 {
-    padding-top: 20px;
-    font-family: sans-serif;
-    font-size: 150%;
-    color: #D5AD6D;
+  padding-top: 1.25em;
+  font-family: sans-serif;
+  font-size: 150%;
+}
+
+.sidebar a:hover {
+  font-weight: bold;
+}
+
+.gradient-text {
+  background: rgb(39,39,39);
+  /* Create the gradient. */
+
+  background: linear-gradient(to right, red, blue, red, blue);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 .sidebar p {
@@ -48,27 +67,27 @@ body {
 
 .mainlist {
   float: right;
-  padding-right: 360px;
+  padding-right: 26em;
   font-size: 110%;
 }
 
 .courselist {
   float: right;
-  padding-right: 180px;
-  padding-left: 75px;
+  padding-right: 10em;
+  padding-left: 5em;
   font-size: 110%;
-  padding-bottom: 25px;
+  padding-bottom: 1.56em;
 }
 
 li {
-  padding-bottom: 8px;
+  padding-bottom: .5em;
 }
 
 main p {
     width: 100%;
     float: right;
     font-size: 115%;
-    padding-top: 40px;
+    padding-top: 2.5em;
 }
 
 main h1 {
@@ -81,66 +100,47 @@ main h2 {
     width: 100%;
     float: right;
     font-size: 115%;
-    padding-bottom: 10px;
-    padding-top: 20px;
+    padding-bottom: .62em;
+    padding-top: 1.25em;
 }
 
 .text1 {
   float: right;
-  padding-right: 150px;
+  padding-right: 9.38em;
 }
 
 .text2 {
   float: right;
-  padding-right: 150px;
-  padding-bottom: 70px;
-}
-
-.sidebar {
-  width: 25%;
-  margin-left: 100px;
+  padding-right: 9.38em;
+  padding-bottom: 4.38em;
 }
 
 .sidebar p {
-  padding-bottom: 80px;
+  padding-bottom: 5em;
 }
 
 
 /* header style */
+
 header {
-    background-image: url("../images/hillsideimage.jpeg");
-    background-repeat: no-repeat;
-    background-size: 1440px 600px;
-    color: white;
-    font-variant: sans-serif;
-}
-
-.bordertop {
-    border-bottom: 1px solid lightgrey;
-    padding-bottom: 200px;
+  font-variant: sans-serif;
+  }
+  
+  header img{
+    height: 38em;
     width: 100%;
-    position: relative;
-}
-
-header img{
-    align-content: left;
-    width: 4.25em;
-    height: 4.25em;
-    padding-left: 0px;
-    padding-bottom: 305px;
-    padding-top: 0px;
-}
-
-header h1 {
-    text-align: left;
-}
+  }
+  
+  header h1 {
+  text-align: left;
+  }
 
 
 /* header style end */
 
 footer {
     clear: both;
-    height: 300px;
+    height: 22em;
     font-size: 80%;
     color: white;
     text-align: center;
@@ -149,22 +149,28 @@ footer {
 
 footer p {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 1.25em;
     font-size: 80%;
     font-variant: small-caps;
-    padding-bottom: 50px;
+    padding-bottom: 3.125em;
 }
 
 footer img {
-    padding-top: 40px;
-    width: 235px;
-    height: 160px;
+  padding-top: 40px;
+  width: 235px;
+  height: 160px;
+}
+
+footer .edge {
+  padding-top: 40px;
+  width: 160px;
+  height: 160px;
 }
 
 /* new menu */
 .topnav {
 	overflow: hidden;
-	background-color: #202020;
+	background: linear-gradient(to right, red, white,blue);
     position: relative;
     border: 2px solid black;
   }
@@ -173,11 +179,11 @@ footer img {
     background-color: #282828;
   }
 
-  .topnav .faqs {
+  .topnav .teetimes {
     background-color: #303030;
   }
 
-  .topnav .thecourse {
+  .topnav .faqs {
     background-color: #383838;
   }
 
@@ -191,9 +197,9 @@ footer img {
   
   .topnav a {
 	color: white;
-	padding: 14px 16px;
+	padding: .875em 1em;
 	text-decoration: none;
-	font-size: 17px;
+	font-size: .95em;
 	display: block;
   }
   
@@ -238,7 +244,7 @@ footer img {
 
 #nav_menu ul li a {
 	display: block;
-	width: 165.02px;
+	width: 10.31375em;
 	text-align: center;
 	padding-top: 1em;
 	padding-bottom: 1em;
@@ -264,7 +270,7 @@ footer img {
 .dropdown-content {
 	display: none;
 	position: absolute;
-	padding-top: 10px;
+	padding-top: .625em;
 }
 
 .dropdown-content a:hover {
@@ -294,94 +300,135 @@ footer img {
 @media only screen and (max-width: 1215px) {
 	
   .mainlist {
-    padding-right: 220px;
+    padding-right: 13.75em;
   }
+
+  header img {
+		float: none;
+		display: block;
+    margin: 0 auto;
+		max-width: 100%;
+    }
 }
 
 @media only screen and (max-width: 955px) {
 	
   .mainlist {
-    padding-right: 60px;
+    padding-right: 3.75em;
   }
+  header img {
+		width: 100%;
+		height: 65%;
+    margin: auto;
+    }
 }
 
 @media only screen and (max-width: 870px) {
 	
+  .courselist {
+    margin-top: 1em;
+  }
+  
+  main h1 {
+    text-align: center;
+  }
+
+  header img {
+    width: 95%;
+    height:65%;
+    margin: auto;
+  }
+
   .homesection {
-    width: 100%;
+    width: 100% !important;
   }
 
   .mainwidth {
-    width: 100%;
+    width: 100% !important;
   }
 
   .mainlist {
-    float: none;
-    padding-left: 60px;
+    width: 95%;
+    margin: auto;
+  }
+
+  .text1 {
+    width: 95%;
+    margin: auto;
+  }
+
+  .text2 {
+  width: 95%;
+  margin: auto;
+  text-align: center;
+  box-sizing: border-box;
   }
 
   .sidebar {
-		padding-left: 150px;
-		width: 60%;
-		text-align: center;
-      }
-
-  .text1 {
-    float: none;
+    width: 95%;
+    margin: auto;
+    text-align: center;
   }
 
-  .homesection {
-    padding-left: 35px;
-  }
+  header img {
+    width: 100%;
+    margin: auto;
+    }
 }
   
   @media screen and (max-width: 600px) {
-    #nav_menu .search-container {
-      float: none;
-    }
-    #nav_menu a, #nav_menuinput[type=text], #nav_menu .search-container button {
-      float: none;
-      display: block;
-      text-align: left;
-      width: 100%;
-      margin: 0;
-      padding: 14px;
-    }
-    #nav_menu input[type=text] {
-      border: 1px solid #ccc;  
+
+    .courselist {
+      margin-top: 1em;
     }
 
-    .homesection {
-      width: 100%;
-    }
-
-    .mainwidth {
-      width: 100%;
-    }
-
-    .mainlist {
-      float: none;
-      padding: none;
-      width: 80%;
-    }
-
-    .text1 {
-      float: none;
-    }
-
-    .sidebar {
-      padding-left: 1px;
-      padding-right: 45px;
-      width: 70%;
+    main h1 {
       text-align: center;
     }
 
     header img {
-      float: none;
-      display: block;
-          margin: 0 auto;
-          max-width: 100%;
-          max-height: 330px;
+      width: 95%;
+      height:65%;
+      margin: auto;
+    }
+
+    .homesection {
+      width: 100% !important;
+      padding-left: 2em;
+    }
+
+    .mainwidth {
+      width: 100% !important;
+    }
+
+    .mainlist {
+      width: 95%;
+      margin: auto;
+    }
+
+    .text1 {
+      width: 95%;
+      margin: auto;
+    }
+
+    .text2 {
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    padding-left: 2em;
+    justify-content: flex-start;
+    }
+
+    .sidebar {
+      width: 95%;
+      margin: auto;
+      text-align: center;
+      padding-left: 1em;
+    }
+
+    header img {
+      width: 100%;
+      margin: auto;
       }
   }
   
