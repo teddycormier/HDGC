@@ -42,6 +42,7 @@
 *{
 margin: 0;
 padding: 0;
+box-sizing: border-box;
 }
 
 hr {
@@ -345,6 +346,27 @@ display: none;
 background-color: #333;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 15.5em;
+  height: 21em;
+}
+
+
 
 @media only screen and (max-width: 1215px) {
 
@@ -517,67 +539,121 @@ background-color: #333;
 			}
 		</script>
 
-	<img src="images/pond2.jpeg">
+	<img src="images/snow.jpeg">
 
 	</header>
 
     <main>
 
-		<hr>
+        <hr>
+        
+        <aside class="sidebar">
+            <div>
+                <h3 class="gradient-text"><a href="cost.html">COST</a></h3>
+                <p>The course is currently private but free to play with permisson.</p>
+            </div>
+            <div>
+                <hr>
+                <h3 class="gradient-text"><a href="shop.html">SHOP</a></h3>
+                <p>Apparel is limited to members only. Stay tuned for more news!</p>
+            </div>
+            <div>
+                <hr>
+                <h3 class="gradient-text"><a href="loops.html">LOOPS</a></h3>
+                <p>Three current configurations of varying difficulty. From the Reds, designed to create fun for beginners and families, to the Blue, which challenges high caliber players.</p>
+            </div>
+            <hr>
+            <div>
+                <h3 class="gradient-text"><a href="membership.html">MEMBERSHIP</a></h3>
+                <p>Please contact us at 860-372-8903 for further information in regard to a membership at HDGC.</p>
+                <hr>
+            </div>
+    </aside>
 
 	<div class="homesection">
 		<div class="mainwidth">
 		
-		<h1>TEE TIME INFORMATION</h1>
-		
-		<h2>Remember:</h2>
-			
-		<div class="rememberlist">
-			<ul>
-				<li>If you are more than 10 minutes late, we cannot guarantee you will be able to play.</li>
-				<li>Walkers and children require tee times</li>
-				<li>Enter quantity of players after selecting date/time</li>
-				<li>Tee Times can be booked 32 days in advance</li>
-				<li>Tee Times are required and must be prepaid</li>
-			</ul>
-		</div>
+        <h1>THE COURSE</h1>
+        
+       <!-- Photo Grid -->
+<div class="row"> 
+    <div class="column">
+      <img src="images/hole_1_rec1024_1 2.jpg">
+      <img src="images/hole_3_rec (1)1024_1.jpg">
+      <img src="images/hole_5_rec1024_1.jpg">
+      <img src="images/hole_71024_1.jpg">
+      <img src="images/hole_8_white1024_1.jpg">
+      <img src="images/hole_91024_1.jpg">
+      <img src="images/hole_11_blue1024_1.jpg">
+      <img src="images/hole_12_blue1024_1.jpg">
+      <img src="images/hole_141024_1.jpg">
+      <img src="images/hole_17_wb_14_rec1024_1.jpg">
+      <img src="images/hole_18_blue1024_1.jpg">
+      <img src="images/hole_20_blue1024_1.jpg">
+      <img src="images/hole_22_white1024_1.jpg">
+      <img src="images/hole_24_white1024_1.jpg">
+      <img src="images/hole_25_blue_A1024_1.jpg">
+      <img src="images/hole_27_white1024_1.jpg">
+      <img src="images/hole_29_blue_28_white1024_1.jpg">
+      <img src="images/hole_30_white1024_1.jpg">
+      <img src="images/hole_31_blue1024_1.jpg">
 
-		<h2>Members:</h2>
 
-		<div class="memberslist">
-			<ul>
-				<li>Please make separate bookings for each member</li>
-				<li>Please do not include any non-members in your bookings</li>
-				<li>Make a separate booking for any non-members</li>
-			</ul>
-		
-		</div>
-			<p class="text2">Please contact us or visit our FAQs page for further information on Tee Times.</p>
-		</div>
+    </div>
+    
+    <div class="column">
+        <img src="images/hole_11024_1.jpg">
+        <img src="images/hole_41024_1.jpg">
+        <img src="images/hole_6 (1)1024_1.jpg">
+        <img src="images/hole_7_rec1024_1.jpg">
+        <img src="images/hole_8_blue1024_1.jpg">
+        <img src="images/hole_101024_1.jpg">
+        <img src="images/hole_12_rec1024_1.jpg">
+        <img src="images/hole_13_white1024_1.jpg">
+        <img src="images/hole_16_white_13_rec1024_1.jpg">
+        <img src="images/hole_18_rec1024_1.jpg">
+        <img src="images/hole_19_rec1024_1.jpg">
+        <img src="images/hole_21_white1024_1.jpg">
+        <img src="images/hole_22_blue1024_1.jpg">
+        <img src="images/hole_24_blue_23_white1024_1.jpg">
+        <img src="images/hole_26_white1024_1.jpg">
+        <img src="images/hole_27_blue1024_1.jpg">
+        <img src="images/hole_29_white_16_rec1024_1.jpg">
+        <img src="images/hole_30_blue1024_1.jpg">
+        <img src="images/hole_32_blue1024_1.jpg">
+
+
+    </div>
+     
+    <div class="column">
+        <img src="images/hole_2_rec1024_1.jpg">
+        <img src="images/hole_5 (1)1024_1.jpg">
+        <img src="images/hole_6_rec (1)1024_1.jpg">
+        <img src="images/hole_8_rec1024_1.jpg">
+        <img src="images/hole_9_rec1024_1.jpg">
+        <img src="images/hole_11_rec_11_white1024_1.jpg">
+        <img src="images/hole_12_white1024_1.jpg">
+        <img src="images/hole_13_blue1024_1.jpg">
+        <img src="images/hole_16_blue1024_1.jpg">
+        <img src="images/hole_18_white1024_1.jpg">
+        <img src="images/hole_191024_1.jpg">
+        <img src="images/hole_21_blue1024_1.jpg">
+        <img src="images/hole_23_blue1024_1.jpg">
+        <img src="images/hole_25_white1024_1.jpg">
+        <img src="images/hole_26_blue1024_1.jpg">
+        <img src="images/hole_28_blue1024_1.jpg">
+        <img src="images/hole_29_blue_28_white1024_1.jpg">
+        <img src="images/hole_31_white1024_1.jpg">
+        <img src="images/hole_33_blue1024_1.jpg">
+    
+    
+    </div>
+
+  </div>
+
 	</div>
 
-	<aside class="sidebar">
-		<div>
-			<h3 class="gradient-text"><a href="cost.html">COST</a></h3>
-			<p>The course is currently private but free to play with permisson.</p>
-		</div>
-		<div>
-			<hr>
-			<h3 class="gradient-text"><a href="shop.html">SHOP</a></h3>
-			<p>Apparel is limited to members only. Stay tuned for more news!</p>
-		</div>
-		<div>
-			<hr>
-			<h3 class="gradient-text"><a href="loops.html">LOOPS</a></h3>
-			<p>Three current configurations of varying difficulty. From the Reds, designed to create fun for beginners and families, to the Blue, which challenges high caliber players.</p>
-		</div>
-		<hr>
-		<div>
-			<h3 class="gradient-text"><a href="membership.html">MEMBERSHIP</a></h3>
-			<p>Please contact us at 860-372-8903 for further information in regard to a membership at HDGC.</p>
-			<hr>
-		</div>
-</aside>
+	
     </main>
 
 
