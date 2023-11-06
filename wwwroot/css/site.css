@@ -14,10 +14,6 @@ html {
   min-height: 100%;
 }
 
-body {
-  margin-bottom: 60px;
-}
-
 h1 {
   font-family: 'CustomFont', sans-serif;
   font-size: 35px;
@@ -89,12 +85,23 @@ h1 {
   }
 }
 
-footer {
-  z-index: 9999;
+.footer {
+  margin-top: 18.3vh;
+  z-index: 9998;
   position: relative;
+  bottom: 0;
+  left: 0;
   background-color: rgba(0, 0, 0, 0.2);
   text-align: center;
 }
+
+.block {
+  background-color: #fff;
+  z-index: 10000000;
+  position: relative !important;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;  border-radius: 40px; 
+}
+
 
 .tabButton {
   margin:10px 10px;

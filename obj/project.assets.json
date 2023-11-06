@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "/Users/teddycormier/.nuget/packages/": {}
+    "C:\\Users\\teddy\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/teddycormier/Desktop/Capstone/MyMvcApp/MyMvcApp.csproj",
+      "projectUniqueName": "C:\\Users\\teddy\\Downloads\\School\\Capstone-1\\MyMvcApp.csproj",
       "projectName": "MyMvcApp",
-      "projectPath": "/Users/teddycormier/Desktop/Capstone/MyMvcApp/MyMvcApp.csproj",
-      "packagesPath": "/Users/teddycormier/.nuget/packages/",
-      "outputPath": "/Users/teddycormier/Desktop/Capstone/MyMvcApp/obj/",
+      "projectPath": "C:\\Users\\teddy\\Downloads\\School\\Capstone-1\\MyMvcApp.csproj",
+      "packagesPath": "C:\\Users\\teddy\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\teddy\\Downloads\\School\\Capstone-1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/teddycormier/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\teddy\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -62,7 +62,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.401/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }
