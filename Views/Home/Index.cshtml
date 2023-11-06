@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Welcome";
+}
+<style>
+    body {
+        background-image: url("images/ocean.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+</style>
+<head>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div id="txtWelcomeText" style="margin-top: 260px;">
+        <h1 class="display-4">Welcome to Endicott Fitness: Your Path to a Healthier You Begins Here</h1>
+    </div>
+    <div id="btnGetInvolved" style="text-align: center; padding-top: 3%">
+        <a href="@Url.Action("Dashboard", "Home")">
+            <button class="hollow-button slide_right" style="font-size: 35px;">Get Involved</button>
+        </a>
+    </div>
+    <div id="imgEC" style="padding-top: 9.5%">
+        <img src="images/EC.png" style="width: 150px">
+    </div>
+</body>
+
